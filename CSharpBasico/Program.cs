@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Runtime.Remoting.Metadata.W3cXsd2001;
 
 namespace CSharpBasico
@@ -104,56 +105,220 @@ namespace CSharpBasico
 
             // Estructura repetitiva while
 
-            int valor = 1;
+            //int valor = 1;
 
-            while(valor <= 100)
-            {
-                Console.WriteLine("El valor es: "+valor);
-                valor++; // valor = valor + 1;
-            }
-
-            Console.WriteLine("Termina el while");
-
-
-            // Introduzca un limite inferior [li]
-            // Introduzca un limite superior [ls]
-
-            //5 10 = 5 6 7 8 9 10
-
-            // Imprimir los numeros [li - ls]
-            Console.WriteLine();
-            Console.WriteLine("For ... ");
-            //for(int i = 0; i <= 50; i++)
+            //while(valor <= 100)
             //{
-            //    Console.WriteLine("El valor de i es: "+i);
-            //    Console.WriteLine("");
+            //    Console.WriteLine("El valor es: "+valor);
+            //    valor++; // valor = valor + 1;
             //}
 
-            int suma = 0, value, promedio;
+            //Console.WriteLine("Termina el while");
 
-            int cantidadIngresos = 5;
+
+            //// Introduzca un limite inferior [li]
+            //// Introduzca un limite superior [ls]
+
+            ////5 10 = 5 6 7 8 9 10
+
+            //// Imprimir los numeros [li - ls]
+            //Console.WriteLine();
+            //Console.WriteLine("For ... ");
+            ////for(int i = 0; i <= 50; i++)
+            ////{
+            ////    Console.WriteLine("El valor de i es: "+i);
+            ////    Console.WriteLine("");
+            ////}
+
+            //int suma = 0, value, promedio;
+
+            //int cantidadIngresos = 5;
+
+            //for (int i = 0; i < cantidadIngresos; i++)
+            //{
+            //    Console.WriteLine("Ingrese valor:");
+            //    value = int.Parse(Console.ReadLine());
+            //    suma = suma + value;
+            //}
+
+            //Console.WriteLine("La suma es: "+suma);
+            //Console.WriteLine();
+            //Console.WriteLine("El promedio es: "+suma/cantidadIngresos);
+
+            //var entero = 0;
+
+            //// DO WHILE
+
+            //do
+            //{
+            //    entero++;
+            //    // Operaciones
+
+            //} while (entero < 10);
+
+
+
+            // Arreglos
+
+            var sueldos = new int[10];
+
+            var size = sueldos.Length; // tamaño del arreglo
+
+            sueldos[0] = 5000;
+
+            sueldos[1] = 6500;
+
+            sueldos[2] = 8500;
+
+            //Console.WriteLine("El sueldo en la pos. 2 es = " + sueldos[1]);
+
+            //for (int i = 0; i < 100; i++)
+            //{
+            //    //sueldos[i] = i;
+            //    //Console.WriteLine("El sueldo en la pos. "+i+ " es: "+ sueldos[i]);
+            //}
+
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    Console.WriteLine("Ingrese un sueldo: ");
+            //    string valor = Console.ReadLine();
+            //    sueldos[i] = int.Parse(valor);
+            //}
+
+            //Console.WriteLine("Los valores ingresados fueron: ");
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    Console.WriteLine("El valor ingresado es: "+sueldos[i]);
+            //}
+
+            //Console.WriteLine("Cuantos sueldos va a cargar: ");
+
+            //string valor = Console.ReadLine();
+
+            //int cantidad = int.Parse(valor);
+
+            //int[] sueldosArray = new int[cantidad];
+
+            //for (int i = 0; i < sueldosArray.Length; i++)
+            //{
+            //    Console.WriteLine("Ingrese el sueldo No. "+(i+1));
+            //    string sueldo = Console.ReadLine();
+            //    sueldosArray[i] = int.Parse(sueldo);
+            //}
+
+            //Console.WriteLine("Los sueldos ingresados son: ");
+            //for (int i = 0; i < sueldosArray.Length; i++)
+            //{
+            //    Console.WriteLine("El sueldo No. {0} es {1}", (i+1), sueldosArray[i]);
+            //}
+
+            //// 0   1   2   3   4   5   
+            ////100 200 300 400 500 600 
+            //Console.WriteLine("Los sueldos ingresados son: (utilizando foreach...)");
+            //foreach (var sueldo in sueldosArray)
+            //{
+            //    Console.WriteLine("El sueldo es {0}", sueldo);
+            //}
+
+            //var sumatoriaSueldos = 0;
+            //var promedioSueldos = 0;
+
+            //foreach (var sueldo in sueldosArray)
+            //{
+            //    sumatoriaSueldos += sueldo;
+            //}
+
+            //promedioSueldos = sumatoriaSueldos / sueldosArray.Length;
+
+            //Console.WriteLine("El promedio de sueldo es: "+ promedioSueldos);
+
+            //// buscar el mayor sueldo ingresado
+
+            //var mayorSueldo = sueldosArray[0];
             
-            for (int i = 0; i < cantidadIngresos; i++)
+            //// 0   1   2   3   4   5   
+            ////100 200 800 400 500 600
+
+            //for (int i = 1; i < sueldosArray.Length; i++)
+            //{
+            //    if(mayorSueldo < sueldosArray[i])
+            //    {
+            //        mayorSueldo = sueldosArray[i];
+            //    }
+            //}
+
+            //Console.WriteLine("El mayor sueldo es: "+mayorSueldo);
+
+            // Matrices
+            // [filas, columnas]
+
+            var matriz = new int[4, 4];
+
+            matriz[0, 0] = 1;
+            matriz[0, 1] = 10;
+            matriz[0, 2] = 15;
+            matriz[0, 3] = 20;
+
+            matriz[1, 0] = 30;
+            matriz[1, 1] = 35;
+            matriz[1, 2] = 40;
+            matriz[1, 3] = 45;
+
+            matriz[2, 0] = 30;
+            matriz[2, 1] = 35;
+            matriz[2, 2] = 40;
+            matriz[2, 3] = 45;
+
+            //for (int fila = 0; fila < 4; fila++)
+            //{
+            //    for (int columna = 0; columna < 4; columna++)
+            //    {
+            //        matriz[fila, columna] = fila * columna;
+            //    }
+            //}
+
+            //Console.WriteLine("La matriz en [1,3] es: "+matriz[1,3]);
+
+            //Console.WriteLine("Todos los valores de la matriz: ");
+
+            //for (int fila = 0; fila < 4; fila++)
+            //{
+            //    for (int columna = 0; columna < 4; columna++)
+            //    {
+            //        Console.WriteLine("El valor en {0},{1} es {2}",fila,columna,matriz[fila,columna]);
+            //    }
+            //}
+
+            // [0,0] [0,1] [0,2] [0,3]
+            // [1,0] [1,1] [1,2] [1,3]
+            // [2,0] [2,1] [2,2] [2,3]
+
+            for (int fila = 0; fila < 4; fila++)
             {
-                Console.WriteLine("Ingrese valor:");
-                value = int.Parse(Console.ReadLine());
-                suma = suma + value;
+                for (int columna = 0; columna < 4; columna++)
+                {
+                    if(fila == columna)
+                    {
+                        matriz[fila, columna] = 1;
+                    }
+                    else
+                    {
+                        matriz[fila, columna] = 0;
+                    }
+                }
             }
 
-            Console.WriteLine("La suma es: "+suma);
-            Console.WriteLine();
-            Console.WriteLine("El promedio es: "+suma/cantidadIngresos);
-
-            var entero = 0;
-
-            // DO WHILE
-
-            do
+            for (int fila = 0; fila < 4; fila++)
             {
-                entero++;
-                // Operaciones
+                for (int columna = 0; columna < 4; columna++)
+                {
+                    Console.WriteLine("El valor en {0},{1} es {2}", fila, columna, matriz[fila, columna]);
+                }
+            }
 
-            } while (entero < 10);
+
+
+
         }
     }
 }
