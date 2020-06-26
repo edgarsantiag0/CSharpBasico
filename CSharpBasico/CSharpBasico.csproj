@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class 2\PrimitiveTypes.cs" />
     <Compile Include="Fechas.cs" />
+    <Compile Include="Class 1\HelloWorld.cs" />
     <Compile Include="Listas.cs" />
     <Compile Include="Metodos.cs" />
     <Compile Include="Program.cs" />
