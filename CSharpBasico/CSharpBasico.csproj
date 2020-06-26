@@ -43,12 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class 2\PrimitiveTypes.cs" />
+    <Compile Include="Arrays.cs" />
+    <Compile Include="Arrays2d.cs" />
+    <Compile Include="ControlFlow.cs" />
     <Compile Include="Fechas.cs" />
-    <Compile Include="Class 1\HelloWorld.cs" />
+    <Compile Include="HelloWorld.cs" />
     <Compile Include="Listas.cs" />
+    <Compile Include="LogicalOperations.cs" />
+    <Compile Include="Loops.cs" />
     <Compile Include="Metodos.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="PrimitiveTypes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

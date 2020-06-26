@@ -65,23 +65,6 @@ namespace CSharpBasico
 
             Console.WriteLine("Add: "+ timeSpan.Add(TimeSpan.FromMinutes(50)));
 
-
-            // Web (HTML, CSS, JS)
-
-            // var fechaHoy = DateTime.Now;
-            // return 
-
-
-            // Mobile (XAML)
-            // 
-
-            // var fechaHoy = DateTime.Now;
-            // return 
-
-            // Desktop
-
-
-
         }
     }
 }
