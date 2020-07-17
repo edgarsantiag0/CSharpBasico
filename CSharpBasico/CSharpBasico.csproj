@@ -44,16 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="1. HelloWorld.cs" />
-    <Compile Include="2. PrimitiveTypes.cs" />
-    <Compile Include="3. LogicalOperations.cs" />
-    <Compile Include="4. Classes.cs" />
-    <Compile Include="5. ControlFlow.cs" />
-    <Compile Include="6. Loops.cs" />
-    <Compile Include="7. Arrays.cs" />
-    <Compile Include="8. Arrays2d.cs" />
-    <Compile Include="9. Listas.cs" />
-    <Compile Include="99. Metodos.cs" />
-    <Compile Include="999. Fechas.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="NameSpaces.cs" />
+    <Compile Include="Persona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
